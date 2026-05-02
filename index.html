@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de confidentialit&eacute; — On regarde quoi ?</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: #1A1A2E;
+      color: #E0E0E0;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    header {
+      text-align: center;
+      padding: 48px 0 40px;
+      border-bottom: 1px solid rgba(233, 69, 96, 0.3);
+      margin-bottom: 48px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    header .app-name {
+      color: #E94560;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    header .date {
+      color: #8888A0;
+      font-size: 0.9rem;
+    }
+
+    h2 {
+      color: #FFFFFF;
+      font-size: 1.35rem;
+      margin: 40px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #E94560;
+      display: inline-block;
+      font-weight: 600;
+    }
+
+    h3 {
+      color: #E94560;
+      font-size: 1.05rem;
+      margin: 24px 0 10px;
+      font-weight: 600;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: #C8C8D8;
+    }
+
+    ul {
+      margin: 10px 0 18px 24px;
+      color: #C8C8D8;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      padding-left: 4px;
+    }
+
+    ul li::marker {
+      color: #E94560;
+    }
+
+    a {
+      color: #E94560;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(233, 69, 96, 0.3);
+      transition: border-color 0.2s;
+    }
+
+    a:hover {
+      border-bottom-color: #E94560;
+    }
+
+    .section {
+      margin-bottom: 12px;
+    }
+
+    .highlight-box {
+      background: rgba(233, 69, 96, 0.08);
+      border-left: 3px solid #E94560;
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      margin: 20px 0;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0;
+      color: #D8D8E8;
+    }
+
+    .nav-link {
+      display: inline-block;
+      margin-top: 48px;
+      padding: 12px 28px;
+      background: rgba(233, 69, 96, 0.15);
+      color: #E94560;
+      border: 1px solid rgba(233, 69, 96, 0.3);
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .nav-link:hover {
+      background: rgba(233, 69, 96, 0.25);
+      border-color: #E94560;
+      border-bottom: 1px solid #E94560;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 0;
+      margin-top: 48px;
+      border-top: 1px solid rgba(233, 69, 96, 0.15);
+      color: #6868808;
+      font-size: 0.85rem;
+    }
+
+    footer p {
+      color: #686880;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 24px;
+    }
+
+    table th,
+    table td {
+      text-align: left;
+      padding: 12px 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    table th {
+      color: #FFFFFF;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: rgba(233, 69, 96, 0.1);
+    }
+
+    table td {
+      color: #C8C8D8;
+      font-size: 0.95rem;
+    }
+
+    table tr:last-child td {
+      border-bottom: none;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 24px 16px 60px;
+      }
+
+      header {
+        padding: 32px 0 28px;
+        margin-bottom: 32px;
+      }
+
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        margin-top: 32px;
+      }
+
+      table th,
+      table td {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <div class="app-name">On regarde quoi ?</div>
+    <h1>Politique de confidentialit&eacute;</h1>
+    <p class="date">Derni&egrave;re mise &agrave; jour : 1er mai 2026</p>
+  </header>
+
+  <!-- 1. Introduction -->
+  <div class="section">
+    <h2>1. Introduction</h2>
+    <p>
+      Bienvenue sur <strong>On regarde quoi ?</strong> (&laquo; l'Application &raquo;).
+      Cette politique de confidentialit&eacute; d&eacute;crit comment nous collectons, utilisons et
+      prot&eacute;geons vos donn&eacute;es personnelles lorsque vous utilisez notre application mobile.
+    </p>
+    <p>
+      L'Application est d&eacute;velopp&eacute;e par Marina (&laquo; nous &raquo;, &laquo; notre &raquo;).
+      Nous nous engageons &agrave; respecter votre vie priv&eacute;e et &agrave; prot&eacute;ger vos donn&eacute;es
+      conform&eacute;ment au R&egrave;glement G&eacute;n&eacute;ral sur la Protection des Donn&eacute;es (RGPD).
+    </p>
+    <div class="highlight-box">
+      <p>
+        <strong>En r&eacute;sum&eacute; :</strong> Nous ne vendons pas vos donn&eacute;es, nous n'affichons aucune publicit&eacute;,
+        et nous ne vous tra&ccedil;ons pas. Vos donn&eacute;es servent uniquement au bon fonctionnement de l'application.
+      </p>
+    </div>
+  </div>
+
+  <!-- 2. Donn&eacute;es collect&eacute;es -->
+  <div class="section">
+    <h2>2. Donn&eacute;es collect&eacute;es</h2>
+    <p>Nous collectons uniquement les donn&eacute;es n&eacute;cessaires au fonctionnement de l'Application :</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Donn&eacute;e</th>
+          <th>Finalit&eacute;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Adresse e-mail</td>
+          <td>Cr&eacute;ation et authentification de votre compte</td>
+        </tr>
+        <tr>
+          <td>Mot de passe</td>
+          <td>S&eacute;curisation de votre compte (stock&eacute; de mani&egrave;re chiffr&eacute;e)</td>
+        </tr>
+        <tr>
+          <td>Pr&eacute;f&eacute;rences de swipe</td>
+          <td>Enregistrer vos choix (j'aime / je n'aime pas) sur les films et s&eacute;ries</td>
+        </tr>
+        <tr>
+          <td>Films/s&eacute;ries vus et notes</td>
+          <td>Suivre ce que vous avez regard&eacute; et vos &eacute;valuations</td>
+        </tr>
+        <tr>
+          <td>Appartenances aux groupes</td>
+          <td>Permettre de rejoindre des groupes et trouver des matchs communs</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Donn&eacute;es que nous ne collectons PAS</h3>
+    <ul>
+      <li>Donn&eacute;es de localisation</li>
+      <li>Contacts de votre t&eacute;l&eacute;phone</li>
+      <li>Identifiants publicitaires</li>
+      <li>Donn&eacute;es de navigation ou de tra&ccedil;age</li>
+      <li>Donn&eacute;es biom&eacute;triques</li>
+    </ul>
+  </div>
+
+  <!-- 3. Utilisation des donn&eacute;es -->
+  <div class="section">
+    <h2>3. Utilisation des donn&eacute;es</h2>
+    <p>Vos donn&eacute;es sont utilis&eacute;es exclusivement pour :</p>
+    <ul>
+      <li>Vous permettre de cr&eacute;er un compte et de vous connecter</li>
+      <li>Sauvegarder vos pr&eacute;f&eacute;rences de films et s&eacute;ries (swipes)</li>
+      <li>Enregistrer les films que vous avez vus et vos notes</li>
+      <li>G&eacute;rer votre participation aux groupes</li>
+      <li>Calculer les matchs communs entre membres d'un groupe</li>
+    </ul>
+    <div class="highlight-box">
+      <p>
+        Nous <strong>ne vendons jamais</strong> vos donn&eacute;es &agrave; des tiers.
+        Nous <strong>n'affichons aucune publicit&eacute;</strong>.
+        Nous <strong>ne r&eacute;alisons aucun profilage</strong> &agrave; des fins commerciales.
+      </p>
+    </div>
+  </div>
+
+  <!-- 4. Services tiers -->
+  <div class="section">
+    <h2>4. Services tiers</h2>
+    <p>L'Application fait appel aux services tiers suivants :</p>
+
+    <h3>Supabase</h3>
+    <p>
+      Nous utilisons <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a> pour
+      l'authentification des utilisateurs et le stockage des donn&eacute;es (swipes, groupes, notes).
+      Supabase h&eacute;berge les donn&eacute;es sur des serveurs s&eacute;curis&eacute;s.
+      Consultez la <a href="https://supabase.com/privacy" target="_blank" rel="noopener">politique de confidentialit&eacute; de Supabase</a>.
+    </p>
+
+    <h3>TMDB (The Movie Database)</h3>
+    <p>
+      Les informations sur les films et s&eacute;ries (titres, affiches, descriptions) proviennent de
+      l'API <a href="https://www.themoviedb.org" target="_blank" rel="noopener">TMDB</a>.
+      Aucune de vos donn&eacute;es personnelles n'est transmise &agrave; TMDB.
+      Ce produit utilise l'API TMDB mais n'est ni approuv&eacute; ni certifi&eacute; par TMDB.
+    </p>
+  </div>
+
+  <!-- 5. Stockage et s&eacute;curit&eacute; -->
+  <div class="section">
+    <h2>5. Stockage et s&eacute;curit&eacute;</h2>
+    <p>
+      Vos donn&eacute;es sont stock&eacute;es de mani&egrave;re s&eacute;curis&eacute;e via Supabase. Les mots de passe sont
+      chiffr&eacute;s et ne sont jamais stock&eacute;s en clair. Les communications entre l'application et
+      nos serveurs sont prot&eacute;g&eacute;es par chiffrement TLS/SSL.
+    </p>
+    <p>
+      Nous mettons en &oelig;uvre des mesures techniques et organisationnelles raisonnables
+      pour prot&eacute;ger vos donn&eacute;es contre tout acc&egrave;s non autoris&eacute;, perte ou destruction.
+    </p>
+  </div>
+
+  <!-- 6. Conservation des donn&eacute;es -->
+  <div class="section">
+    <h2>6. Conservation des donn&eacute;es</h2>
+    <p>
+      Vos donn&eacute;es sont conserv&eacute;es tant que votre compte est actif. Si vous supprimez votre compte,
+      toutes vos donn&eacute;es personnelles seront d&eacute;finitivement supprim&eacute;es de nos serveurs
+      dans un d&eacute;lai de <strong>30 jours</strong>.
+    </p>
+    <p>
+      Vous pouvez demander la suppression de votre compte &agrave; tout moment en nous contactant
+      &agrave; l'adresse indiqu&eacute;e ci-dessous.
+    </p>
+  </div>
+
+  <!-- 7. Vos droits (RGPD) -->
+  <div class="section">
+    <h2>7. Vos droits</h2>
+    <p>
+      Conform&eacute;ment au RGPD, vous disposez des droits suivants concernant vos donn&eacute;es personnelles :
+    </p>
+    <ul>
+      <li><strong>Droit d'acc&egrave;s :</strong> obtenir une copie de vos donn&eacute;es personnelles</li>
+      <li><strong>Droit de rectification :</strong> corriger vos donn&eacute;es inexactes ou incompl&egrave;tes</li>
+      <li><strong>Droit &agrave; l'effacement :</strong> demander la suppression de vos donn&eacute;es</li>
+      <li><strong>Droit &agrave; la portabilit&eacute; :</strong> recevoir vos donn&eacute;es dans un format structur&eacute;</li>
+      <li><strong>Droit d'opposition :</strong> vous opposer au traitement de vos donn&eacute;es</li>
+      <li><strong>Droit &agrave; la limitation :</strong> limiter le traitement de vos donn&eacute;es</li>
+    </ul>
+    <p>
+      Pour exercer l'un de ces droits, contactez-nous &agrave;
+      <a href="mailto:contact@onregardequoi.app">contact@onregardequoi.app</a>.
+      Nous r&eacute;pondrons &agrave; votre demande dans un d&eacute;lai de 30 jours.
+    </p>
+    <p>
+      Vous disposez &eacute;galement du droit d'introduire une r&eacute;clamation aupr&egrave;s de la
+      <a href="https://www.cnil.fr" target="_blank" rel="noopener">CNIL</a>
+      (Commission Nationale de l'Informatique et des Libert&eacute;s).
+    </p>
+  </div>
+
+  <!-- 8. Mineurs -->
+  <div class="section">
+    <h2>8. Mineurs</h2>
+    <p>
+      L'Application n'est pas destin&eacute;e aux enfants de moins de 13 ans. Nous ne collectons pas
+      sciemment de donn&eacute;es personnelles de mineurs de moins de 13 ans. Si vous &ecirc;tes parent
+      et que vous pensez que votre enfant nous a transmis des donn&eacute;es personnelles, contactez-nous
+      pour que nous les supprimions.
+    </p>
+  </div>
+
+  <!-- 9. Modifications -->
+  <div class="section">
+    <h2>9. Modifications de cette politique</h2>
+    <p>
+      Nous pouvons mettre &agrave; jour cette politique de confidentialit&eacute; de temps &agrave; autre.
+      En cas de modification substantielle, nous vous en informerons via l'Application.
+      La date de derni&egrave;re mise &agrave; jour est indiqu&eacute;e en haut de cette page.
+    </p>
+  </div>
+
+  <!-- 10. Contact -->
+  <div class="section">
+    <h2>10. Contact</h2>
+    <p>
+      Pour toute question concernant cette politique de confidentialit&eacute; ou vos donn&eacute;es personnelles,
+      vous pouvez nous contacter :
+    </p>
+    <ul>
+      <li><strong>E-mail :</strong> <a href="mailto:contact@onregardequoi.app">contact@onregardequoi.app</a></li>
+      <li><strong>D&eacute;veloppeur :</strong> Marina</li>
+    </ul>
+  </div>
+
+  <div style="text-align: center;">
+    <a href="terms_of_service.html" class="nav-link">Consulter les Conditions G&eacute;n&eacute;rales d'Utilisation &rarr;</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 On regarde quoi ? — Tous droits r&eacute;serv&eacute;s.</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
