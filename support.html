@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assistance — On regarde quoi ?</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: #1A1A2E;
+      color: #E0E0E0;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    header {
+      text-align: center;
+      padding: 48px 0 40px;
+      border-bottom: 1px solid rgba(233, 69, 96, 0.3);
+      margin-bottom: 48px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    header .app-name {
+      color: #E94560;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    header .date {
+      color: #8888A0;
+      font-size: 0.9rem;
+    }
+
+    h2 {
+      color: #FFFFFF;
+      font-size: 1.35rem;
+      margin: 40px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #E94560;
+      display: inline-block;
+      font-weight: 600;
+    }
+
+    h3 {
+      color: #E94560;
+      font-size: 1.05rem;
+      margin: 24px 0 10px;
+      font-weight: 600;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: #C8C8D8;
+    }
+
+    ul {
+      margin: 10px 0 18px 24px;
+      color: #C8C8D8;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      padding-left: 4px;
+    }
+
+    ul li::marker {
+      color: #E94560;
+    }
+
+    a {
+      color: #E94560;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(233, 69, 96, 0.3);
+      transition: border-color 0.2s;
+    }
+
+    a:hover {
+      border-bottom-color: #E94560;
+    }
+
+    .section {
+      margin-bottom: 12px;
+    }
+
+    .highlight-box {
+      background: rgba(233, 69, 96, 0.08);
+      border-left: 3px solid #E94560;
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      margin: 20px 0;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0;
+      color: #D8D8E8;
+    }
+
+    .faq-item {
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+    }
+
+    .faq-item h3 {
+      margin-top: 0;
+    }
+
+    .faq-item p:last-child {
+      margin-bottom: 0;
+    }
+
+    .nav-link {
+      display: inline-block;
+      margin-top: 48px;
+      padding: 12px 28px;
+      background: rgba(233, 69, 96, 0.15);
+      color: #E94560;
+      border: 1px solid rgba(233, 69, 96, 0.3);
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .nav-link:hover {
+      background: rgba(233, 69, 96, 0.25);
+      border-color: #E94560;
+      border-bottom: 1px solid #E94560;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 0;
+      margin-top: 48px;
+      border-top: 1px solid rgba(233, 69, 96, 0.15);
+      font-size: 0.85rem;
+    }
+
+    footer p {
+      color: #686880;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 24px 16px 60px;
+      }
+
+      header {
+        padding: 32px 0 28px;
+        margin-bottom: 32px;
+      }
+
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        margin-top: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <div class="app-name">On regarde quoi ?</div>
+    <h1>Assistance</h1>
+  </header>
+
+  <!-- FAQ -->
+  <div class="section">
+    <h2>Questions fr&eacute;quentes</h2>
+
+    <div class="faq-item">
+      <h3>Comment cr&eacute;er un compte ?</h3>
+      <p>
+        Ouvrez l'application et appuyez sur &laquo; Inscris-toi &raquo;. Renseignez votre adresse e-mail,
+        un mot de passe et un pseudo. C'est gratuit et ne prend que quelques secondes.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Comment fonctionne le swipe ?</h3>
+      <p>
+        Swipez &agrave; <strong>droite</strong> pour ajouter un film &agrave; votre liste d'envies,
+        &agrave; <strong>gauche</strong> pour passer, ou vers le <strong>haut</strong> si vous l'avez d&eacute;j&agrave; vu
+        (vous pourrez alors lui donner une note).
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Comment fonctionnent les groupes ?</h3>
+      <p>
+        Cr&eacute;ez un groupe et partagez le code &agrave; 6 caract&egrave;res avec vos proches.
+        L'application identifie automatiquement les films et s&eacute;ries aim&eacute;s par tous les membres du groupe.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Comment supprimer mon compte ?</h3>
+      <p>
+        Envoyez un e-mail &agrave; <a href="mailto:contact@onregardequoi.app">contact@onregardequoi.app</a>
+        avec l'adresse e-mail associ&eacute;e &agrave; votre compte. Vos donn&eacute;es seront supprim&eacute;es
+        sous 30 jours.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>L'application est-elle gratuite ?</h3>
+      <p>
+        Oui, On regarde quoi ? est enti&egrave;rement gratuite, sans publicit&eacute; et sans achat int&eacute;gr&eacute;.
+      </p>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="section">
+    <h2>Nous contacter</h2>
+    <p>
+      Vous avez un probl&egrave;me, une suggestion ou une question ? &Eacute;crivez-nous :
+    </p>
+    <div class="highlight-box">
+      <p><strong>E-mail :</strong> <a href="mailto:contact@onregardequoi.app">contact@onregardequoi.app</a></p>
+    </div>
+    <p>Nous r&eacute;pondons g&eacute;n&eacute;ralement sous 48 heures.</p>
+  </div>
+
+  <div style="text-align: center;">
+    <a href="index.html" class="nav-link">Politique de confidentialit&eacute;</a>
+    <a href="terms.html" class="nav-link">Conditions d'utilisation</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 On regarde quoi ? — Tous droits r&eacute;serv&eacute;s.</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
